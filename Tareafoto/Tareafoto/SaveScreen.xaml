@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tareafoto.SaveScreen">
+    <ContentPage.Content>
+        <StackLayout Padding="10,10" BackgroundColor="White">
+
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Tomar Fotografia" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Image x:Name="potrait"  HeightRequest="520" />
+
+
+            <StackLayout Padding="10,10" BackgroundColor="White">
+                <Entry x:Name="nombre" Placeholder="Nombre" PlaceholderColor="gray" TextColor="Black"/>
+                <Entry x:Name="descripcion" Placeholder="Descripcion" PlaceholderColor="Gray" TextColor="Black"/>
+            </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" BackgroundColor="White">
+                <Button Text="TOMAR FOTO" x:Name="fotook" Clicked="tomaBtn_Clicked" BackgroundColor="ForestGreen" ></Button>
+                <Button Text="GUARDAR EN SQLITE" x:Name="sqlite" Clicked="sqliteBtn_Clicked" BackgroundColor="DarkBlue"></Button>
+
+            
+            </StackLayout>
+
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

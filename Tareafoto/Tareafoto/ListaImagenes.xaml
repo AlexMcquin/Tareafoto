@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tareafoto.ListaImagenes">
+    <ContentPage.Content>
+        <StackLayout Padding="10" BackgroundColor="White">
+
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Lista de Imagenes" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <ListView x:Name="ListaIMG" ItemTapped="ListaImagenes_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                        <TextCell Text="{Binding FileName}" />
+                </DataTemplate 
+                     >
+            </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
